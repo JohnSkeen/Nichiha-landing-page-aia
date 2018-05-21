@@ -1,0 +1,131 @@
+/* Global Layout Set-up */
+* {
+  /* box-sizing: border-box; */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Header Styles */
+
+.main-header {
+  background: url('images/header.jpg') #0057b8;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  line-height: .4;
+}
+
+.header-p {
+  font-size: 28px;
+  color: white;
+  width: 45%;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.header-border {
+  border-top: 1px white solid;
+  width: 140px;
+  margin: 70px auto 65px;
+}
+
+.top-logo {
+  margin-top: 140px;
+  width: 115px;
+}
+
+.down-arrow {
+  height: 70px;
+  margin: 60px 0 80px;
+}
+
+/* Column Styles */
+
+main {
+  background-color: #f0f2f4;
+}
+
+.main-border {
+  border-top: 2px #565c6b solid;
+  width: 120px;
+  margin: 110px 0 60px;
+}
+
+.one {
+  margin: 20 0 0 50px;
+  padding: 0 75px 0 250px;
+}
+
+.one p {
+  color: #565c6b;
+  font-size: 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+
+h2 {
+  color: #565c6b;
+  font-size: 30px;
+  text-align: left;
+  line-height: 1.4;
+  font-weight: 500;
+
+}
+
+.tickets {
+  margin-top: 100px;
+  margin-left: 0;
+}
+
+.two {
+  width: 600px;
+  height: 1020px;
+  background-color: red;
+}
+
+.main-columns {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+/* Styles for footer */
+
+footer {
+  background-color: #4b5161;
+  padding: 20px 0;
+}
+
+footer p {
+  display: block;
+  float: left;
+  color: white;
+  margin-left: 255px;
+}
+
+.bottom-logo {
+  height: 60px;
+  float: right;
+  margin-right: 255px;
+}
+
+
+/* Clearfix */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Styles for larger screens */
