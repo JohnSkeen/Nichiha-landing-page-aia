@@ -13,8 +13,9 @@ body {
 /* Header Styles */
 
 .main-header {
-  background: url('images/header.jpg') #0057b8;
+  background: url('../images/header.jpg') no-repeat top center;
   background-size: cover;
+  background-color: #0057b8;
   margin: 0 auto;
 }
 
