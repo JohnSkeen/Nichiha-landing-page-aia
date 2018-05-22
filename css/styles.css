@@ -184,6 +184,20 @@ footer p {
     width: 140px;
   }
 
+  .tickets {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .one {
+    margin-left: 40px;
+    position: relative;
+  }
+
+  .two {
+    margin-right: 40px;;
+  }
+
 }
 
 @media screen and (min-width: 1250px) {
@@ -202,6 +216,14 @@ footer p {
 
   h1 {
     font-size: 5em;
+  }
+
+  .one {
+    margin-left: 200px;
+  }
+
+  .two {
+    margin-right: 200px;
   }
 
 }
