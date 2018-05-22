@@ -125,6 +125,10 @@ footer p {
     grid-template-columns: 50% 50%;
   }
 
+  .hidden-block {
+    display: block;
+  }
+
   .footer-info {
     width: 80%;
     margin: 0 auto;
@@ -148,6 +152,10 @@ footer p {
 
   footer p {
     float: left;
+  }
+
+  h1 {
+    font-size: 5em;
   }
 
 }
