@@ -31,6 +31,10 @@ h1 {
   margin: -30px;
 }
 
+h2 {
+  text-transform: uppercase;
+}
+
 .header-p {
   font-size: 1.25rem;
   color: white;
@@ -160,7 +164,7 @@ footer p {
 
   .down-arrow {
     height: 70px;
-    margin: 60px 0 40px;
+    margin: 60px 0 70px;
   }
 
   h1 {
