@@ -150,6 +150,7 @@ footer p {
 
   .main-header {
     background: url('../images/header.jpg') no-repeat top center;
+    background-size: cover;
   }
 
   .main-columns {
