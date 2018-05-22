@@ -8,6 +8,7 @@ body {
   padding: 0;
   text-align: center;
   font-family: 'Montserrat', sans-serif;
+  background-color: #f0f2f4;
 }
 
 /* Header Styles */
@@ -20,19 +21,16 @@ body {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 2.5rem;
+  padding-top: 30px;
   text-transform: uppercase;
   font-weight: bold;
   color: white;
-  line-height: .4;
+  line-height: 1;
 }
 
-.header-p {
-  font-size: 28px;
-  color: white;
-  width: 45%;
-  margin: 0 auto;
-  font-weight: 400;
+.hidden-block {
+  display: none;
 }
 
 .header-border {
@@ -60,12 +58,12 @@ main {
 .main-border {
   border-top: 2px #565c6b solid;
   width: 120px;
-  margin: 110px 0 60px;
+  margin: 30px 0 30px;
 }
 
 .one {
   margin: 20 0 0 50px;
-  padding: 0 75px 0 250px;
+  padding: 0 15px;
 }
 
 .one p {
@@ -81,46 +79,34 @@ h2 {
   text-align: left;
   line-height: 1.4;
   font-weight: 500;
-
 }
 
 .tickets {
-  margin-top: 100px;
-  margin-left: 0;
+  display: block;
+  margin: 30px 0 30px;
 }
 
 .two {
-  width: 600px;
+  width: 100%;
   height: 1020px;
   background-color: red;
-}
-
-.main-columns {
-  display: grid;
-  grid-template-columns: 50% 50%;
 }
 
 /* Styles for footer */
 
 footer {
   background-color: #4b5161;
-  padding: 20px 0;
+  padding: 20px 15px;
 }
 
 footer p {
   display: block;
-  float: left;
   color: white;
-  margin-left: 255px;
-
 }
 
 .bottom-logo {
   height: 60px;
-  float: right;
-  margin-right: 255px;
 }
-
 
 /* Clearfix */
 
@@ -131,3 +117,37 @@ footer p {
 }
 
 /* Styles for larger screens */
+
+@media screen and (min-width: 768px) {
+
+  .main-columns {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  .footer-info {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .header-p {
+    font-size: 28px;
+    color: white;
+    width: 45%;
+    margin: 0 auto;
+    font-weight: 400;
+  }
+
+}
+
+@media screen and (min-width: 1250px) {
+
+  .bottom-logo {
+    float: right;
+  }
+
+  footer p {
+    float: left;
+  }
+
+}
