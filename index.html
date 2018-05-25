@@ -5,10 +5,10 @@
     <title>Ticket Giveaway 2018 - Nichiha USA</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="css/facebox.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/scroll.js"></script>
   </head>
   <body>
     <header id="top" class="main-header">
@@ -30,9 +30,37 @@
       </div> <!-- End column one -->
 
       <div id="anchor1" class="column two">
-        <div class="form"></div>
-        <a href="#top"><p class="rules">Sweepstakes Rules</p></a>
+        <div class="form-holder">
+          <h3 class="form-header">Enter for a "Shot" at Two Tickets to Hamilton on Broadway</h3>
+          <div class="form">
+            <form>
+              <label for="name" class="field-label">First Name</label>
+              <input type="text" id="name" name="user_name" placeholder="555-123-4567" class="form-field"><br />
+              <label for="name" class="field-label">Last Name</label>
+              <input type="text" id="name" name="user_name" placeholder="555-123-4567" class="form-field"><br />
+              <label for="name" class="field-label">Email</label>
+              <input type="text" id="name" name="user_name" placeholder="555-123-4567" class="form-field"><br />
+              <label for="name" class="field-label">Phone</label>
+              <input type="text" id="name" name="user_name" placeholder="555-123-4567" class="form-field"><br />
+              <label for="name" class="field-label">I am</label>
+              <input type="text" id="name" name="user_name" placeholder="555-123-4567" class="form-field"><br />
+              <label for="name" class="field-label">Company</label>
+              <input type="text" id="name" name="user_name" placeholder="555-123-4567" class="form-field"><br />
+              <label for="name" class="field-label">Zipcode</label>
+              <input type="text" id="name" name="user_name" placeholder="555-123-4567" class="form-field"><br />
+              <input type="submit" value="ENTER TO WIN" class="submit"><br />
+          </div>
+        </div> <!-- end form holder -->
+        <a href="#info" rel="facebox"><p class="rules">Contest Rules</p></a>
       </div> <!-- End column two -->
+
+      <div id="info" style="display:none;">
+        <div class="facebox-header">
+          <h4>This is my title</h4>
+        </div>
+        <p> Hey, I'm the 'info' div! </p>
+        <p> I look like this: </p>
+      </div>
     </main>
 
     <footer class="clearfix">
@@ -41,5 +69,8 @@
         <p class="clearfix">&copy; NICHIHA 2018 | 6465 E JOHNS CROSSING, SUITE 250, JOHNS CREEK, GA 30097 | 1-866-424-4421 | <a href="http://www.nichiha.com/contact" class="contact">Contact Us</a></p>
       </div> <!-- footer info -->
     </footer>
+  <script src="js/jquery.js"></script>
+  <script src="js/facebox.js"></script>
+  <script src="js/scroll.js"></script>
   </body>
 </html>
