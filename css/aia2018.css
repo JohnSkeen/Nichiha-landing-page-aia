@@ -77,7 +77,7 @@ main {
   color: #565c6b;
   font-size: 20px;
   text-align: left;
-  line-height: 1.5;
+  line-height: 2.25;
 }
 
 h2 {
@@ -87,11 +87,13 @@ h2 {
   line-height: 1.4;
   font-weight: 500;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .tickets {
   display: block;
-  width: 50%;
+  width: 100%;
+  max-width: 555px;
   margin: 30px 0 70px;
 }
 
@@ -109,7 +111,7 @@ h2 {
   margin: 75px auto 30px;
   background-color: #fff;
   border-top: 6px #0057b8 solid;
-  min-height: 1020px;
+  min-height: 1050px;
 }
 
 h3 {
@@ -118,8 +120,9 @@ h3 {
   text-align: left;
   width: 85%;
   margin: 0 auto;
-  padding: 60px 0 30px;
-  font-weight: 500;
+  padding: 60px 0 15px;
+  font-weight: 400;
+  line-height: 1.5em;
 }
 
 .form {
@@ -127,6 +130,14 @@ h3 {
   margin: 0 auto;
 }
 
+.h4 {
+  color: #565c6b;
+  font-size: 9px;
+  text-align: center;
+  width: 85%;
+  margin: 10px 0 0 30px;
+  font-weight: 400;
+}
 /* Form Input Styles */
 
 /* .field-label {
@@ -165,6 +176,76 @@ h3 {
   padding: 18px 0;
 } */
 
+/* Styles for contest rules */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 40px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+     background:none!important;
+     color:inherit;
+     border:none;
+     padding:0!important;
+     font: inherit;
+     cursor: pointer;
+     color: #565c6b;
+     text-decoration: underline;
+}
+
+.rule-p {
+  font-size: 13px;
+  padding: 0 20px 20px 20px;
+  line-height: 1.5;
+  width: 80%;
+  margin: 0 auto 20px;
+}
+
+.container p {
+  font-size: 13px;
+  padding: 0 20px;
+  text-align: left;
+}
+
+.container h4 {
+  font-size: 24px;
+  padding: 0 20px;
+}
+
 /* Styles for footer */
 
 footer {
@@ -201,7 +282,7 @@ footer p {
 
 /* Styles for larger screens */
 
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
 
   .main-header {
     background: url('http://www2.nichiha.com/l/65302/2018-05-22/cjkc19/65302/141828/header.jpg') no-repeat top center;
@@ -209,8 +290,15 @@ footer p {
   }
 
   .main-columns {
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: flex;
+  }
+
+  .one {
+    flex-basis: 50%;
+  }
+
+  .two {
+    flex-basis: 50%;
   }
 
   .top-logo {
@@ -247,7 +335,7 @@ footer p {
   .tickets {
     position: absolute;
     bottom: 0;
-    max-width: 350px;
+    width: 85%;
   }
 
   .one {
@@ -260,12 +348,12 @@ footer p {
   }
 
   h3 {
-    font-size: 28px;
+    font-size: 24px;
   }
 
 }
 
-@media screen and (min-width: 1250px) {
+@media (min-width: 1250px) {
 
   .bottom-logo {
     float: right;
@@ -293,7 +381,7 @@ footer p {
 
 }
 
-@media screen and (min-width: 2000px) {
+@media (min-width: 2000px) {
 
   .one {
     margin-left: 500px;
@@ -308,7 +396,7 @@ footer p {
   }
 }
 
-@media screen and (min-width: 2700px) {
+@media (min-width: 2700px) {
 
   .one {
     margin-left: 900px;
